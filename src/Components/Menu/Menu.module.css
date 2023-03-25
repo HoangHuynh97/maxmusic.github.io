@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 a {
     text-decoration: none !important;
 }
@@ -398,6 +405,8 @@ a {
     left: 120%;
 }
 .mm_container_menu {
+    -webkit-transition: all ease 1s;
+    -o-transition: all ease 1s;
     transition: all ease 1s;
     position: fixed;
     top: 0;
@@ -1102,4 +1111,3 @@ a {
         left: 0px;
     }
 }
-

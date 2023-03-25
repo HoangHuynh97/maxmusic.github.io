@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 a {
     text-decoration: none !important;
 }
@@ -42,9 +49,15 @@ a {
 .you_like {
     display: none;
 }
+.container_bottom {
+    position: fixed;
+    z-index: 999;
+}
 .hidden_mobile {
     opacity: 0;
-    transition-delay: 750ms !important;
+    -webkit-transition-delay: 750ms !important;
+         -o-transition-delay: 750ms !important;
+            transition-delay: 750ms !important;
 }
 .mm_show_menu_mobile {
     display: none;
@@ -196,8 +209,12 @@ a {
     width: 100%;
 }
 .sc_container_box_song {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
     padding: 5px 10px;
     border-radius: 5px;
@@ -651,6 +668,8 @@ a {
     background: #ffffff94;
 }
 .mm_container_bot {
+    -webkit-transition: all ease 1s;
+    -o-transition: all ease 1s;
     transition: all ease 1s;
     position: fixed;
     padding: 0 20px;
@@ -687,6 +706,8 @@ a {
             align-items: center;
 }
 .c_img_song {
+    -webkit-transition: all ease 700ms;
+    -o-transition: all ease 700ms;
     transition: all ease 700ms;
     width: 60px;
     height: 60px;
@@ -701,17 +722,33 @@ a {
     border-radius: 5px;
 }
 .c_img_song.active img {
-    animation-name: rotateImg;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: rotateImg;
+            animation-name: rotateImg;
+    -webkit-animation-duration: 10s;
+            animation-duration: 10s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}
+@-webkit-keyframes rotateImg {
+    0%   {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+                transform: rotate(359deg);
+    }
 }
 @keyframes rotateImg {
     0%   {
-        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
     }
     100% {
-        transform: rotate(359deg);
+        -webkit-transform: rotate(359deg);
+                transform: rotate(359deg);
     }
 }
 
@@ -1114,30 +1151,43 @@ a {
 }
 .container_action_bar {
     position: fixed;
+    -webkit-transition: all ease-in-out 1s;
+    -o-transition: all ease-in-out 1s;
     transition: all ease-in-out 1s;
     top: 0;
     right: -300px;
     width: 300px;
     height: calc(100vh - 80px);
     background: #231b2e;
-    box-shadow: -25px 0px 15px -20px #00000094;
+    -webkit-box-shadow: -25px 0px 15px -20px #00000094;
+            box-shadow: -25px 0px 15px -20px #00000094;
     overflow: auto;
 }
 .container_action_bar.active {
     right: 0px;
 }
 .content_action_bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 .action_bar:hover {
     opacity: 1;
 }
 .sc_c_action_song {
     display: none;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     width: 80px;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .icon_action_song {
     margin: 0 5px;
@@ -1146,6 +1196,8 @@ a {
     width: calc(100% - 155px);
 }
 .sc_container_box_song:hover .sc_c_action_song {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .text_line {
@@ -1203,8 +1255,13 @@ a {
 
     .mm_container_bot.active_mobile {
         height: 100vh;
-        flex-direction: column;
-        justify-content: unset;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: unset;
+            -ms-flex-pack: unset;
+                justify-content: unset;
     }
     .active_mobile .sc_container_right,
     .active_mobile .sc_time_m,
@@ -1214,8 +1271,13 @@ a {
     }
     .active_mobile .sc_container_left {
         width: 100%;
-        flex-direction: column;
-        justify-content: unset;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: unset;
+            -ms-flex-pack: unset;
+                justify-content: unset;
     }
     .active_mobile .c_img_song {
         width: 200px;
@@ -1235,9 +1297,15 @@ a {
         margin: 10px;
     }
     .active_mobile .sc_time_m {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
     .active_mobile .sc_time_line {
         width: 100%;
@@ -1266,7 +1334,8 @@ a {
     .active_mobile .container_action_bar {
         position: static;
         width: 100%;
-        box-shadow: unset;
+        -webkit-box-shadow: unset;
+                box-shadow: unset;
         background: #231b2e00;
     }
     .active_mobile .text_line {
@@ -1286,20 +1355,31 @@ a {
         z-index: 1000;
         right: 15px;
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: end;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: end;
         margin-top: 10px;
     }
     .hidden_mobile svg {
         cursor: pointer;
-        user-select: none;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
         color: #b5b5b561;
         font-weight: bold;
         text-transform: uppercase;
         font-size: 24px;
-        transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg);
+                transform: rotate(-90deg);
     }
     .icon_hidden_mobile {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
     }
 }

@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .hidden {
     display: none;
 }
@@ -20,24 +27,35 @@
     float: right;
 }
 .mm_container_banner_singer {
-	background: linear-gradient(90deg, rgb(23 15 35) 0%, rgb(114 25 154 / 37%) 29%, rgb(84 84 200 / 26%) 51%, rgb(48 94 114 / 27%) 76%, rgb(23 15 35) 100%);
-	width: 100%;
+    background: -webkit-gradient(linear, left top, right top, from(rgb(23 15 35)), color-stop(29%, rgb(114 25 154 / 37%)), color-stop(51%, rgb(84 84 200 / 26%)), color-stop(76%, rgb(48 94 114 / 27%)), to(rgb(23 15 35)));
+    background: -o-linear-gradient(left, rgb(23 15 35) 0%, rgb(114 25 154 / 37%) 29%, rgb(84 84 200 / 26%) 51%, rgb(48 94 114 / 27%) 76%, rgb(23 15 35) 100%);
+    background: linear-gradient(90deg, rgb(23 15 35) 0%, rgb(114 25 154 / 37%) 29%, rgb(84 84 200 / 26%) 51%, rgb(48 94 114 / 27%) 76%, rgb(23 15 35) 100%);
+    width: 100%;
     height: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .mm_img_banner_singer {
-	width: 150px;
+    width: 150px;
     height: 150px;
     overflow: hidden;
     border-radius: 50%;
-    box-shadow: 0px 0px 20px 0px #ffffff;
+    -webkit-box-shadow: 0px 0px 20px 0px #ffffff;
+            box-shadow: 0px 0px 20px 0px #ffffff;
 }
 .mm_img_banner_singer img {
-	width: 100%;
+    width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 .mm_new_song, .mm_list_random, .mm_trend, .mm_singer, .mm_top_song, .mm_category {
     margin: 15px;
@@ -94,13 +112,20 @@
     font-size: 0.7em;
 }
 .mm_container_box_song {
+    display: -ms-grid;
     display: grid;
     width: 100%;
+    -ms-grid-columns: 33% 33% 33%;
     grid-template-columns: 33% 33% 33%;
 }
 .sc_container_box_song {
     cursor: pointer;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 10px;
     border-radius: 5px;
@@ -180,7 +205,9 @@
     opacity: 1;
 }
 .sc_container_img_list:hover .c_img_list {
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
 }
 .c_img_list {
     -webkit-transition: all ease 0.5s;
@@ -188,13 +215,16 @@
     transition: all ease 0.5s;
     height: 100%;
     width: 100%;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 50% 50%;
     grid-template-columns: 50% 50%;
 }
 .c_img_list_list {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 .c_container_img {
     opacity: 0;
@@ -243,9 +273,15 @@
 }
 
 .sc_c_more_action {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 30px;
 }
 .sc_c_more_icon {
@@ -272,6 +308,7 @@
 
 @media only screen and (max-width: 768px) {
     .mm_container_box_song {
+        -ms-grid-columns: 50% 50%;
         grid-template-columns: 50% 50%;
     }
     .sc_c_des {
@@ -280,9 +317,15 @@
 }
 @media only screen and (max-width: 600px) {
     .sc_container_box_list.inblock.w100 {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
     .mm_title_menu {
         padding: 15px 15px
@@ -301,7 +344,7 @@
         height: 100px;
     }
     .mm_container_box_song {
+        -ms-grid-columns: 100%;
         grid-template-columns: 100%;
     }
 }
-

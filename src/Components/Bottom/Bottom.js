@@ -94,6 +94,7 @@ const Bottom = (props) => {
     }
 
     window.addEventListener('storage', () => {
+        setIsSpiner(true);
         setUrl(isTTUrl+sessionStorage.getItem("url_song"));
         setNameSong(sessionStorage.getItem("name_song"));
         setNameSinger(sessionStorage.getItem("name_singer"));
@@ -213,6 +214,10 @@ const Bottom = (props) => {
         }
     };
 
+    function isCanPlay() {
+        setIsSpiner(false);
+    }
+
     function handleLoadedData() {
         setIsSpiner(true);
         const hours = Math.floor(audioRef.current.duration / 3600);
@@ -228,10 +233,6 @@ const Bottom = (props) => {
         
         setDuration(Math.round(audioRef.current.duration));
         if (isPlay) audioRef.current.play();
-    }
-
-    function isCanPlay() {
-        setIsSpiner(false);
     }
 
     function handleCurrentTime() {

@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .mm_container {
     margin-bottom: 80px;
     margin-left: 250px;
@@ -78,7 +85,9 @@
     opacity: 1;
 }
 .sc_container_img_list:hover .c_img_list {
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
 }
 .c_img_list {
     -webkit-transition: all ease 0.5s;
@@ -86,7 +95,9 @@
     transition: all ease 0.5s;
     height: 100%;
     width: 100%;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 50% 50%;
     grid-template-columns: 50% 50%;
 }
 .c_container_img {
@@ -151,6 +162,8 @@
     overflow: hidden;
 }
 .mm_title_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     color: #fff;
     font-size: 3em;
@@ -160,8 +173,12 @@
 }
 .mm_icon_title_menu {
     margin-left: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: #e081ff;
 }
 .sc_container_box_list {
@@ -170,17 +187,26 @@
 .c_img_list_list {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 .mm_tab {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     color: #b4b4b4;
     border-bottom: 2px solid #ffffff21;
 }
 .c_tab_title {
     cursor: pointer;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     padding: 10px 10px;
 }
 
@@ -188,18 +214,28 @@
     width: 100%;
 }
 .c_content_tab {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 .btn_hight {
     background: #322240;
     color: #e081ff;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     padding: 5px 10px;
     margin: 10px 0;
     border-radius: 20px;
     cursor: pointer;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 .mm_table {
     width: 100%;
@@ -277,18 +313,31 @@
 }
 .c_td_box_image .sc_container_box_song {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .sc_option_table {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: right;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
 }
 .sc_icon_table {
     margin: 10px;
     cursor: pointer;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 .c_content_tab_mv {
     text-align: center;
@@ -325,9 +374,15 @@
 
 @media only screen and (max-width: 600px) {
     .sc_container_box_list.inblock.w100 {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
     .mm_title_menu {
         padding: 15px 15px
