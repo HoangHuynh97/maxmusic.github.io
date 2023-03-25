@@ -1,0 +1,15 @@
+.mm_container {
+    margin-bottom: 80px;
+    margin-left: 250px;
+    background: #170f23;
+    padding: 90px 30px 0px 30px;
+}
+.coming {
+    width: 100%;
+    height: calc(100vh - 170px);
+}
+.coming img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

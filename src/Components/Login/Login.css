@@ -1,0 +1,189 @@
+.m-container-login {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: -o-linear-gradient(225deg,#c850c0,#4158d0);
+    background: linear-gradient(-135deg,#c850c0,#4158d0);
+    overflow: hidden;
+    z-index: 999;
+}
+.sc-box-bg {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+}
+.sc-box-bg:nth-child(1) {
+    background: #ffffff29;
+    -webkit-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+            transform: rotate(30deg);
+    top: 30px;
+    left: -360px;
+}
+.sc-box-bg:nth-child(2) {
+    background: #00000021;
+    -webkit-transform: rotate(35deg);
+        -ms-transform: rotate(35deg);
+            transform: rotate(35deg);
+    top: 30px;
+    right: -360px;
+}
+.sc-box-bg:nth-child(3) {
+    background: #ffffff40;
+    -webkit-transform: rotate(55deg);
+        -ms-transform: rotate(55deg);
+            transform: rotate(55deg);
+    bottom: -370px;
+    left: 30%;
+}
+.sc-container-form {
+    width: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    z-index: 9;
+}
+.sc-title-form {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: initial;
+}
+.sc-text-form {
+    width: 100%;
+    font-size: 1rem;
+    color: #878787;
+    font-weight: bold;
+    font-family: initial;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.sc-content-input {
+    position: relative;
+    width: 100%;
+}
+.sc-content-input > svg, .sc-content-input > svg {
+    position: absolute;
+    color: #9a9a9a;
+    bottom: 10px;
+    left: 10px;
+}
+.sc-login-input {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #d6d6d6;
+    padding: 5px 5px 5px 30px;
+    outline: 0;
+    color: #888;
+}
+.sc-forgot-password {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    cursor: pointer;
+    text-align: right;
+    width: 100%;
+    font-size: 1rem;
+    color: #878787;
+    font-weight: bold;
+    font-family: initial;
+    margin-top: 15px;
+}
+.sc-btn-login {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    cursor: pointer;
+    padding: 10px 100px;
+    margin-top: 30px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: initial;
+    border-radius: 30px;
+    background: -o-linear-gradient(225deg,#c850c0,#4158d0);
+    background: linear-gradient(-135deg,#c850c0,#4158d0);
+}
+.sc-btn-login:hover {
+    opacity: 0.8;
+}
+.sc-login-more {
+    font-size: 1rem;
+    color: #878787;
+    font-weight: bold;
+    font-family: initial;
+    margin-top: 20px;
+}
+.sc-box-brands {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.sc-icon-brands {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    cursor: pointer;
+    background: #0003ff;
+    padding: 10px 13px;
+    border-radius: 50%;
+    color: #fff;
+    margin: 10px;
+}
+.sc-icon-brands:nth-child(2) {
+    background: #ff0000;
+    padding: 10px 13px;
+    border-radius: 50%;
+    color: #fff;
+    margin: 10px;
+}
+.sc-sign-up {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #ff0000;
+    font-weight: bold;
+    font-family: initial;
+    margin-top: 10px;
+}

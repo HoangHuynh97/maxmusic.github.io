@@ -1,0 +1,250 @@
+a {
+    text-decoration: none !important;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.hidden {
+    display: none !important;
+}
+.block {
+    display: block;
+}
+.inblock {
+    display: inline-block;
+}
+.w100 {
+    width: 100%;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.mginl20 {
+    margin-left: 20px;
+}
+.mginbt20 {
+    margin: 20px 0px;
+}
+.mginbt5 {
+    margin: 5px 0px;
+}
+.active_tab {
+    color: #fff;
+    border-bottom: 2px solid #e081ff;
+}
+.mm_container {
+    min-height: calc(100vh - 80px);
+    margin-bottom: 80px;
+    margin-left: 250px;
+    background: #170f23;
+    padding: 90px 30px 0px 30px;
+}
+.text-title-15 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.nowrap {
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+}
+.text-title-1 {
+    font-size: 1em;
+}
+.color-fff {
+    color: #fff;
+}
+.color-797 {
+    color: #797979;
+}
+.btn-icon-play {
+    cursor: pointer;
+    user-select: none;
+    background: #d300ff;
+    padding: 10px 20px;
+    margin: 20px 0px;
+    border-radius: 30px;
+    display: flex;
+    color: #fff;
+}
+.btn-icon-play:hover {
+    opacity: 0.8;
+}
+.btn-icon-play span {
+    margin-left: 5px;
+}
+.text-title-3 {
+    font-size: 3em;
+    font-weight: bold;
+}
+.title_singer {
+    font-family: emoji;
+    letter-spacing: 10px;
+}
+.icon-play {
+    font-size: 3em;
+    color: #e081ff;
+}
+.modal {
+    display: none;
+}
+.ReactModal__Overlay {
+    z-index: 99;
+    background-color: rgb(0 0 0 / 82%) !important;
+}
+.box-input {
+    display: flex;
+    flex-direction: column;
+}
+.box-input label {
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.box-input input {
+    border: 0;
+    padding: 5px 10px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #ff00c9;
+    border-radius: 5px;
+}
+.box-input select {
+    border: 0;
+    padding: 5px 10px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #ff00c9;
+    border-radius: 5px;
+}
+.modal-header {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 5px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 20px;
+}
+.modal-footer {
+    display: flex;
+    justify-content: end;
+    border-top: 1px solid #fff;
+    padding: 10px 0px;
+}
+.btn-submit {
+    cursor: pointer;
+    user-select: none;
+    background: #754aff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+.btn-close {
+    cursor: pointer;
+    user-select: none;
+    background: #ff4a4a;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+.sc_text_link {
+    cursor: pointer;
+    user-select: none;
+    color: #7a00aa;
+}
+.sc_text_link:hover {
+    color: #c226ff;
+}
+.nohover_singer {
+    font-size: unset !important;
+    font-weight: normal !important;
+    text-transform: none !important;
+    color: #7a00aa !important;
+    border: 0px !important;
+}
+.nohover_singer:hover {
+    color: #7a00aa;
+}
+.sc_text_link:hover .nohover_singer {
+    color: #7a00aa;
+}
+.text-center {
+    text-align: center;
+}
+.open {
+    display: block !important;
+}
+.heart_active {
+    color: #f00 !important;
+}
+.c_content_tab_mv {
+    text-align: center;
+}
+.c_text_empty {
+    color: #ffffff73;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .mm_container {
+        margin-left: 200px;
+    }
+
+    .title_singer {
+        white-space: nowrap;
+        -o-text-overflow: ellipsis;
+           text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .mm_container {
+        padding: 90px 0px 0px 0px;
+    }
+
+    .title_singer {
+        width: calc(100% - 165px);
+        letter-spacing: 0px;
+    }
+    .text-title-3 {
+        font-size: 2em;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .mm_container {
+        margin-left: 0px;
+    }
+}

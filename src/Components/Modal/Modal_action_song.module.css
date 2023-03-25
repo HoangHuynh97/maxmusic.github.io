@@ -1,0 +1,28 @@
+.c_modal_action {
+    display: none;
+    position: absolute;
+    bottom: 30px;
+    border-radius: 5px;
+    background: #34224f;
+    z-index: 999;
+    box-shadow: 0px 10px 10px -10px #101010;
+}
+.c_modal_menu_action {
+    display: flex;
+    padding: 10px 15px;
+    flex-direction: row;
+    align-items: center;
+}
+.c_modal_menu_action:hover {
+    background: #ffffff21;
+}
+.c_modal_menu_icon {
+
+}
+.c_modal_menu_title {
+    white-space: nowrap;
+    margin-left: 10px;
+}
+.c_modal_action.left {
+    right: 0;
+}
