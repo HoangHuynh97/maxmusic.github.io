@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "proxy": "http://localhost/music",
-  "homepage": "http://localhost:3000",
+  "homepage": "https://maxmusic.github.io",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
