@@ -21,7 +21,7 @@
     background: -o-linear-gradient(225deg,#c850c0,#4158d0);
     background: linear-gradient(-135deg,#c850c0,#4158d0);
     overflow: hidden;
-    z-index: 99991;
+    z-index: 1001;
 }
 .sc-box-bg {
     position: absolute;
