@@ -1,5 +1,5 @@
 global.api = 'http://localhost/music';
-global.homepage = 'http://localhost:3000';
+global.homepage = 'https://maxmusic-github-io.vercel.app/';
 
 global.url_song = '17ZUjG5iqEB-vMWaLEnmxNE4SMzzusxeX';
 global.name_song = 'Là 1 Thằng Con Trai';
